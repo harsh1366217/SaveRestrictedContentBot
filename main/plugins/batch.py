@@ -1,5 +1,5 @@
-#Tg:MaheshChauhan/DroneBots
-#Github.com/Vasusen-code
+#Tg: INSIGHT SURGE 
+#Github.com/UNKNOWN 
 
 """
 Plugin for both public & private channels!
