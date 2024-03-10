@@ -8,7 +8,7 @@ from ethon.mystarts import start_srb
     
 S = '/' + 's' + 't' + 'a' + 'r' + 't'
 
-@Drone.on(events.callbackquery.CallbackQuery(data="set"))
+.on(events.callbackquery.CallbackQuery(data="set"))
 async def sett(event):    
     Drone = event.client                    
     button = await event.get_message()
@@ -32,7 +32,7 @@ async def sett(event):
         os.rename(path, f'./{event.sender_id}.jpg')
         await t.edit("Temporary thumbnail saved!")
         
-@Drone.on(events.callbackquery.CallbackQuery(data="rem"))
+.on(events.callbackquery.CallbackQuery(data="rem"))
 async def remt(event):  
     Drone = event.client            
     await event.edit('Trying.')
@@ -42,8 +42,8 @@ async def remt(event):
     except Exception:
         await event.edit("No thumbnail saved.")                        
   
-@Drone.on(events.NewMessage(incoming=True, pattern=f"{S}"))
+.on(events.NewMessage(incoming=True, pattern=f"{S}"))
 async def start(event):
-    text = "Send me Link of any message to clone it here, For private channel message, send invite link first.\n\n**SUPPORT:** @TeamDrone"
+    text = "Send me Link of any message to clone it here, For private channel message, send invite link first.\n\n**SUPPORT:** @INSIGHT_SURGE"
     await start_srb(event, text)
     
